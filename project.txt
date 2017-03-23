@@ -1,0 +1,4 @@
+Hedgehog Pics
+
+- Use Bing API to search for hedgehog pictures
+- When a button is clicked, a new image will be sampled from search and rendered
