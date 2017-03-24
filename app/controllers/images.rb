@@ -1,9 +1,9 @@
 require 'net/http'
 require 'json'
-get '/images' do
-  erb :images
-end
 
+get '/images' do
+  erb :"images"
+end
 
 post '/images' do
     uri = URI('https://api.cognitive.microsoft.com/bing/v5.0/images/search')
@@ -25,9 +25,9 @@ post '/images' do
     end
 
     ruby_hash_with_our_data = JSON.parse(response.body)
-    content = ruby_hash_with_our_data['value'].sample['thumbnailUrl']
-  return content
-  erb :images
+    @content = ruby_hash_with_our_data['value'].sample['thumbnailUrl']
+  # return @content
+  erb :"images"
 end
 
 

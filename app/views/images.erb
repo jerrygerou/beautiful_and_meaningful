@@ -1,17 +1,13 @@
 <div class="container">
-  <h1>Welcome to Hedgehogs!</h1>
 
-
-
-</div>
-
-
-<form action="/images" method="get">
+<form action="/images" method="post">
   <br>
-  <p> <%= content %></p>
-  <img border="0 "src="/#{content}" alt="cute hedgehog">
+  <div class="pic">
+    <img src=<%= "#{@content}"%> width="400">
+  </div>
 <br>
-    <input type="submit" value="New hedgehog"/>
+<br>
+    <input type="submit" value="Get a new hedgehog!"/>
 
 
   </form>
