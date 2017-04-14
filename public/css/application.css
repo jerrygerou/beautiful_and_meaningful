@@ -66,6 +66,7 @@ footer {
   width: 100%;
   position: fixed;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size:;
   color: white;
   text-decoration: none;
   text-align: center;
@@ -126,6 +127,8 @@ footer {
 
 .action_buttons {
   padding: 20px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
 }
 
 .login {
