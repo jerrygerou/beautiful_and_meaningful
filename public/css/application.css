@@ -1,92 +1,147 @@
-.pic {
-  margin: auto;
-  display: block;
+body {
+  font-family: 'Lora', 'Times New Roman', serif;
+  font-size: 20px;
+  color: #333333;
 }
 
-.container {
-  margin: 20px auto;
-  width: 800px;
-  padding: 0px 20px 20px 20px;
-  border: 3px solid black;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  margin-left: 20px;
+
 }
 
-.container h1 {
-  font-size: 17pt;
+p {
+  margin-left: 20px
+
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #128e12;
+}
+
+a img:hover,
+a img:focus {
+  cursor: zoom-in;
+}
+
+blockquote {
+  color: #777777;
+  font-style: italic;
 }
 
 nav a {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: white;
   text-decoration: none;
-  margin: 30px 50px 20px 20px;
-  padding: 10px;
 }
 
 nav {
-  width: 100%;
-  height: 55px;
-  padding: 5px;
-  width: 100%;
-  margin-left: 30px;
   background-color: black;
-  color: white;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-nav .brand, nav .brand a {
-  margin-left: 25px;
-  font-size: 18pt;
-  text-decoration: none;
-  color: #444;
-  width: 60%;
-  display: inline-block;
-}
-
-nav ul {
-  display: inline-block;
-  width: 30%;
-  text-align: right;
+  padding: 10px;
+  width: 100%;
+  position: fixed;
 }
 
 nav li {
-  margin-right: 25px;
   display: inline;
+  margin-right: 10px;
+  padding-right: 20px;
+  padding-left: 10px;
 }
 
-nav li a {
-  color: gray;
+
+.container {
+  padding-top: 75px;
+  padding-left: 25px;
+  padding-bottom: 75px;
+}
+
+.error_container {
+  color: black;
+}
+
+.qac_body input[type=text]{
+    width: 300px;
+    padding: 5px 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: .75em;
+}
+
+.welcome {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 100, 0, 0.7)
+    ),
+    url(https://static1.squarespace.com/static/535a6a68e4b01c3d34585aa9/535bf005e4b0f06595be6028/535bf008e4b0317988a9a639/1398534153271/Chicago+Theater.jpg?format=1500w);
+  height: 400px;
+}
+
+.welcome h1{
+  padding-top: 180px;
+  color: white;
+  font-size: 2em;
+  text-align: center
+}
+
+.welcome h3{
+  padding-top: 5px;
+  color: white;
+  font-size: 1.5em;
+  text-align: center
+}
+
+.questions_on_index p{
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333333;
   text-decoration: none;
+  padding-left: 20px;
+  margin-top: 15px;
+
 }
 
-nav li a:hover {
-  text-decoration: underline;
+.action_buttons {
+  padding: 20px;
 }
 
-form label {
-  font-weight: bold;
-  margin-right: 20px;
+.login {
+  margin-left: 20px;
 }
 
-input {
-  margin-bottom: 10px;
+.login input[type=text], [type=password], [type=email] {
+    max-width: 150px;
+    padding: 5px 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: .75em;
 }
 
-.errors {
-  color: red;
+input[type=submit] {
+    background-color: #3f4042;
+    border-radius:3px;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    border: solid black;
+    margin-left: 30px;
 }
 
-form.quirks {
-  display: inline-block;
-}
-
-.submit {
-  text-align: center;
-}
-
-.label {
-  font-weight: bold;
-  float: left;
-  text-align: right;
-  margin-right: 20px;
-  width: 200px;
+.logout {
+  float: right;
+  padding-right: 40px;
+  font-size: 16px;
+  margin-top: -5px;
 }
